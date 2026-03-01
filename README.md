@@ -11,7 +11,7 @@
   [![Netlify](https://img.shields.io/badge/Deploy-Netlify-00C7B7?style=flat-square&logo=netlify)](https://www.netlify.com/)
   [![License](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](LICENSE)
 
-  [Live Demo](#) • [Features](#features) • [Installation](#installation) • [Screenshots](#screenshots)
+  [Live Demo](vrynt.netlify.app) • [Features](#features) • [Installation](#installation) • [Screenshots](#screenshots)
 
 </div>
 
@@ -259,8 +259,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 👨‍💻 Author
 
 **Your Name**
-- GitHub: [@yourusername](https://github.com/yourusername)
-- LinkedIn: [Your Name](https://linkedin.com/in/yourprofile)
+- GitHub: [@adi6tnine](https://github.com/adi6tnine)
 
 ---
 
