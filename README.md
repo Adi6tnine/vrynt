@@ -2,7 +2,6 @@
 
 <div align="center">
   
-  ![VRYNT Logo](https://img.shields.io/badge/VRYNT-Fashion%20Rental-e879f9?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm[...]
   
   **A brutalist-themed fashion rental platform designed for campus students**
   
