@@ -1,0 +1,112 @@
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+@keyframes fadeUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes fadeDown { from { opacity: 0; transform: translateY(-30px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes slowZoom { from { transform: scale(1); } to { transform: scale(1.05); } }
+@keyframes stamp { 0% { transform: translate(-50%, -50%) scale(2) rotate(-15deg); opacity: 0; } 100% { transform: translate(-50%, -50%) scale(1) rotate(-15deg); opacity: 0.8; } }
+@keyframes drawCircle { from { stroke-dashoffset: 100; } to { stroke-dashoffset: 0; } }
+
+.bg-paper-texture {
+  background-color: #f4f4f5;
+  background-image: radial-gradient(#d4d4d8 1.5px, transparent 1.5px);
+  background-size: 24px 24px;
+}
+
+.bg-barcode {
+  background: repeating-linear-gradient(to right, black, black 3px, white 3px, white 6px, black 6px, black 7px, white 7px, white 10px, black 10px, black 15px, white 15px, white 17px);
+}
+
+.animate-fade-in { animation: fadeIn 0.6s ease-out forwards; }
+.animate-fade-up { opacity: 0; animation: fadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
+.animate-fade-down { opacity: 0; animation: fadeDown 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
+.animate-slow-zoom { animation: slowZoom 20s ease-out forwards; }
+.delay-100 { animation-delay: 100ms; }
+.delay-200 { animation-delay: 200ms; }
+.delay-300 { animation-delay: 300ms; }
+.delay-400 { animation-delay: 400ms; }
+.delay-500 { animation-delay: 500ms; }
+.scrollbar-hide::-webkit-scrollbar { display: none; }
+
+/* Smooth Navigation Hide/Show */
+nav {
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Ensure smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Mobile-specific improvements */
+@media (max-width: 640px) {
+  /* Better touch targets */
+  button, a {
+    min-height: 44px;
+    min-width: 44px;
+  }
+  
+  /* Prevent text size adjustment on orientation change */
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
+  
+  /* Smoother animations on mobile */
+  * {
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+/* Extra small breakpoint for very small phones */
+@media (min-width: 375px) {
+  .xs\:text-3xl { font-size: 1.875rem; line-height: 2.25rem; }
+  .xs\:text-4xl { font-size: 2.25rem; line-height: 2.5rem; }
+  .xs\:text-5xl { font-size: 3rem; line-height: 1; }
+  .xs\:grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .xs\:flex-row { flex-direction: row; }
+  .xs\:text-left { text-align: left; }
+  .xs\:col-span-2 { grid-column: span 2 / span 2; }
+  .xs\:px-4 { padding-left: 1rem; padding-right: 1rem; }
+}
+
+/* Active state for better mobile feedback */
+.active\:scale-95:active {
+  transform: scale(0.95);
+}
+
+.active\:scale-98:active {
+  transform: scale(0.98);
+}
+
+/* Border width utilities for mobile */
+.border-3 {
+  border-width: 3px;
+}
+
+.border-l-3 {
+  border-left-width: 3px;
+}
+
+.border-t-3 {
+  border-top-width: 3px;
+}
+
+/* Improved focus states for accessibility */
+button:focus-visible, 
+a:focus-visible,
+input:focus-visible {
+  outline: 3px solid #000;
+  outline-offset: 2px;
+}
+
+/* Prevent layout shift on hover transforms */
+.hover\:-translate-y-1:hover,
+.hover\:-translate-y-2:hover {
+  will-change: transform;
+}
+
+/* Performance optimization for animations */
+.animate-fade-up,
+.animate-fade-in,
+.animate-fade-down {
+  will-change: opacity, transform;
+}
+

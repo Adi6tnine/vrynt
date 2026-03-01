@@ -1,0 +1,12 @@
+export const PRODUCTS = [
+  { id: 1, name: "Classic Black Tuxedo", category: "Formals", pricePerDay: 499, originalPrice: 5000, rating: 4.8, reviews: 124, image: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=800&q=80", description: "Perfect for Farewell or MUNs. Slim fit, includes jacket and trousers." },
+  { id: 2, name: "Midnight Sequin Dress", category: "Party Wear", pricePerDay: 349, originalPrice: 3500, rating: 4.9, reviews: 89, image: "https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=800&q=80", description: "Stand out at the freshers party. Comfortable lining, stunning look." },
+  { id: 3, name: "Designer Maroon Lehenga", category: "Ethnic", pricePerDay: 899, originalPrice: 12000, rating: 4.7, reviews: 56, image: "https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=800&q=80", description: "Heavy embroidery, perfect for college Diwali fest or weddings." },
+  { id: 4, name: "Beige Trench Coat", category: "Winter Wear", pricePerDay: 299, originalPrice: 4000, rating: 4.5, reviews: 42, image: "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=800&q=80", description: "Stay warm and stylish during winter trips or late-night campus walks." },
+  { id: 5, name: "Vintage Varsity Jacket", category: "Party Wear", pricePerDay: 199, originalPrice: 2500, rating: 4.6, reviews: 210, image: "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=800&q=80", description: "Classic college vibe. Oversized fit." },
+  { id: 6, name: "Elegant Silk Saree", category: "Ethnic", pricePerDay: 449, originalPrice: 6000, rating: 4.9, reviews: 105, image: "https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=800&q=80", description: "Graceful and elegant, ready to wear with pre-stitched pleats." },
+  { id: 7, name: "Navy Blue Suit Set", category: "Formals", pricePerDay: 549, originalPrice: 5500, rating: 4.4, reviews: 78, image: "https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=800&q=80", description: "Sharp and professional. Ideal for placement interviews." },
+  { id: 8, name: "Denim Sherpa Jacket", category: "Winter Wear", pricePerDay: 249, originalPrice: 3000, rating: 4.7, reviews: 92, image: "https://images.unsplash.com/photo-1544923408-75c5cef46f14?w=800&q=80", description: "Casual winter essential. Fleece lining for extra warmth." },
+];
+
+export const CATEGORIES = ["All", "Formals", "Party Wear", "Ethnic", "Winter Wear"];
